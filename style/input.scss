@@ -9,15 +9,6 @@ $collg: ".col-lg";
 $colxl: ".col-xl";
 $colxxl: ".col-xxl";
 
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px
-);
-
 /******** 
 General Style
 ********/
@@ -29,7 +20,7 @@ body {
 }
 
 /******** 
-Row & Col
+Grid System
 ********/
 
 .row{
@@ -91,12 +82,6 @@ Row & Col
 .col-sm, .col-md, .col-lg {
     flex:1 0 0%;
 }
-
-// @media (max-width: 400px){
-//     .row {
-//         display: block;
-//     }
-// }
 
 @media (min-width:576px) {
     .container, #{$ctnsm} {
@@ -249,4 +234,193 @@ Row & Col
         flex: 0 0 auto;
         width: calc(100% / 12);
     }
+}
+
+/******** 
+Buttons
+********/
+
+.btn {
+    display:inline-block;
+    padding:.375rem .75rem;
+    font-size:1rem;
+    border-radius:.3rem;
+    font-weight:400;
+    line-height:1.5;
+    text-align:center;
+    text-decoration:none;
+    vertical-align:middle;
+    cursor:pointer;
+    user-select:none;
+    background-color: transparent;
+    border:1px solid transparent;
+    border-radius:.25rem;
+    transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-primary {
+    color:#fff;
+    background-color:#0d6efd;
+    border-color:#0d6efd;
+}
+
+.btn-primary:hover {
+    color:#fff;
+    background-color:#0b5ed7;
+    border-color:#0a58ca;
+}
+
+.btn-primary:focus {
+    color:#fff;
+    background-color:#0b5ed7;
+    border-color:#0a58ca;
+    box-shadow:0 0 0 .25rem rgba(49,132,253,.5)
+}
+
+.btn-secondary {
+    color:#fff;
+    background-color:#6c757d;
+    border-color:#6c757d;
+}
+    
+.btn-secondary:hover {
+    color:#fff;
+    background-color:#5c636a;
+    border-color:#565e64;
+}
+
+.btn-secondary:focus {
+    color:#fff;
+    background-color:#5c636a;
+    border-color:#565e64;
+    box-shadow:0 0 0 .25rem rgba(130,138,145,.5);
+}
+
+.btn-success {
+    color:#fff;
+    background-color:#198754;
+    border-color:#198754;
+}
+
+.btn-success:hover {
+    color:#fff;
+    background-color:#157347;
+    border-color:#146c43;
+}
+
+.btn-success:focus {
+    color:#fff;
+    background-color:#157347;
+    border-color:#146c43;
+    box-shadow:0 0 0 .25rem rgba(60,153,110,.5);
+}
+
+.btn-danger {
+    color:#fff;
+    background-color:#dc3545;
+    border-color:#dc3545;
+}
+
+.btn-danger:hover {
+    color:#fff;
+    background-color:#bb2d3b;
+    border-color:#b02a37;
+}
+
+.btn-danger:focus {
+    color:#fff;
+    background-color:#bb2d3b;
+    border-color:#b02a37;
+    box-shadow:0 0 0 .25rem rgba(225,83,97,.5);
+}
+
+.btn-warning {
+    color:#000;
+    background-color:#ffc107;
+    border-color:#ffc107;
+}
+
+.btn-warning:hover {
+    color:#000;
+    background-color:#ffca2c;
+    border-color:#ffc720;
+}
+
+.btn-warning:focus {
+    color:#000;
+    background-color:#ffca2c;
+    border-color:#ffc720;
+    box-shadow:0 0 0 .25rem rgba(217,164,6,.5);
+}
+
+.btn-info {
+    color:#000;
+    background-color:#0dcaf0;
+    border-color:#0dcaf0;
+}
+
+.btn-info:hover {
+    color:#000;
+    background-color:#31d2f2;
+    border-color:#25cff2;
+}
+
+.btn-info:focus {
+    color:#000;
+    background-color:#31d2f2;
+    border-color:#25cff2;
+    box-shadow:0 0 0 .25rem rgba(11,172,204,.5);
+}
+
+.btn-light {
+    color:#000;
+    background-color:#f8f9fa;
+    border-color:#f8f9fa;
+}
+
+.btn-light:hover {
+    color:#000;
+    background-color:#f9fafb;
+    border-color:#f9fafb;
+}
+
+.btn-light:focus {
+    color:#000;
+    background-color:#f9fafb;
+    border-color:#f9fafb;
+    box-shadow:0 0 0 .25rem rgba(211,212,213,.5);
+}
+
+.btn-dark {
+    color:#fff;
+    background-color:#212529;
+    border-color:#212529;
+}
+
+.btn-dark:hover {
+    color:#fff;
+    background-color:#1c1f23;
+    border-color:#1a1e21;
+}
+
+.btn-dark:focus {
+    color:#fff;
+    background-color:#1c1f23;
+    border-color:#1a1e21;
+    box-shadow:0 0 0 .25rem rgba(66,70,73,.5);
+}
+
+.btn-link {
+    font-weight:400;
+    color:#0d6efd;
+    text-decoration:underline;
+}
+
+.btn-link:hover {
+    color:#0a58ca;
+}
+
+.btn:focus{
+    outline:0;
+    box-shadow:0 0 0 .25rem rgba(13,110,253,.25);
 }
