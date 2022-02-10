@@ -40,43 +40,36 @@ Grid System
     flex: 0 0 auto;
     flex-grow: 1;
     width: auto;
-    background-color: rgb(random(255), random(255), random(255));
 }
 
 .col-12 {
     flex: 0 0 auto;
     width: 100%;
-    background-color: rgb(random(255), random(255), random(255));
 }
 
 .col-6 {
     flex: 0 0 auto;
     width: 50%;
-    background-color: rgb(random(255), random(255), random(255));
 }
 
 .col-4 {
     flex: 0 0 auto;
     width: calc(100% / 3);
-    background-color: rgb(random(255), random(255), random(255));
 }
 
 .col-3 {
     flex: 0 0 auto;
     width: calc(100% / 4);
-    background-color: rgb(random(255), random(255), random(255));
 }
 
 .col-2 {
     flex: 0 0 auto;
     width: calc(100% / 6);
-    background-color: rgb(random(255), random(255), random(255));
 }
 
 .col-1 {
     flex: 0 0 auto;
     width: calc(100% / 12);
-    background-color: rgb(random(255), random(255), random(255));
 }
 
 .col-sm, .col-md, .col-lg {
@@ -505,4 +498,72 @@ Images
 
 .img-blur {
     filter: blur(1rem);
+}
+
+/******** 
+Color
+********/
+
+.text-primary {
+    color: #0d6efd;
+}
+
+.text-secondary {
+    color: #6c757d;
+}
+
+.text-success {
+    color: #198754;
+}
+
+.text-info {
+    color: #0dcaf0;
+}
+
+.text-warning {
+    color: #ffc107;
+}
+
+.text-danger {
+    color: #dc3545;
+}
+
+.text-light {
+    color: #f8f9fa;
+}
+
+.text-dark {
+    color: #212529;
+}
+
+.bg-primary {
+    background-color: #0d6efd;
+}
+
+.bg-secondary {
+    background-color: #6c757d;
+}
+
+.bg-success {
+    background-color: #198754;
+}
+
+.bg-info {
+    background-color: #0dcaf0;
+}
+
+.bg-warning {
+    background-color: #ffc107;
+}
+
+.bg-danger {
+    background-color: #dc3545;
+}
+
+.bg-light {
+    background-color: #f8f9fa;
+}
+
+.bg-dark {
+    background-color: #212529;
 }
