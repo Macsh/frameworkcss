@@ -5,6 +5,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--bs-body-font-family);
 }
 
 /******** 
@@ -697,22 +698,89 @@ Visibility
 /******** 
 Navbars
 ********/
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-}
-
 .navbar {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.dropdown-menu {
+  display: none;
+  list-style: none;
+  position: static;
+}
+
+.nav-item {
+  flex: 1 1 auto;
+  text-align: center;
+  flex-basis: 0;
+  flex-grow: 1;
+  width: 100%;
+  margin: 0 10px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #696969;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.navbar-brand {
+  margin-left: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #000000;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+form {
+  justify-content: end;
+  padding-top: 0.75rem;
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+form input {
+  padding: 0.375rem 0.75rem;
+  margin: 0 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  border-radius: 0.25rem;
+  border: 1px solid #ced4da;
+}
+
+form input:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.navbar-collapse {
+  display: flex !important;
+  flex-basis: auto;
+  flex-grow: 1;
 }
 
 .navbar > .container, .navbar > .container-fluid, .navbar > .container-lg, .navbar > .container-md, .navbar > .container-sm, .navbar > .container-xl, .navbar > .container-xxl {
@@ -722,12 +790,14 @@ nav {
   justify-content: space-between;
 }
 
-.nav-item {
-  flex: 1 1 auto;
-  text-align: center;
-  flex-basis: 0;
-  flex-grow: 1;
-  width: 100%;
+@media (min-width: 768px) {
+  .visible-lg {
+    visibility: visible;
+  }
+
+  .invisible-lg {
+    visibility: hidden;
+  }
 }
 
 /*# sourceMappingURL=input.css.map */
