@@ -716,9 +716,36 @@ Navbars
 
 .dropdown-menu {
     display:none;
+    text-align: left;
+    padding: 10px;
     list-style:none;
-    position:static;
+    position:absolute;
+    z-index: 3;
+    background-color: #fff;
+    border: 1px rgb(170, 170, 170) solid;
+    & li {
+        overflow: hidden;
+        width: 100%;
+        margin-left: -10px;
+        padding: 5px 5px 5px 15px;
+        & a{
+            text-decoration:none;
+            color:#000000;
+        }
+    } 
 }
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.background-hover {
+    background-color: #d8d8d8;
+}
+
+// .dropdown-divider:hover {
+//     background-color: #ffffff;
+// }
 
 .nav-item {
     flex:1 1 auto;
@@ -727,6 +754,10 @@ Navbars
     flex-grow:1;
     width: 100%;
     margin: 0 10px;
+}
+
+#navbarDropdown {
+    display: flex;
 }
 
 .d-flex {
@@ -789,6 +820,10 @@ form input:focus{
     flex-wrap:inherit;
     align-items:center;
     justify-content: space-between;
+}
+
+.arrow {
+    margin: 1.5px 0 0 5px;
 }
 
 

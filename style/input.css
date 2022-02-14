@@ -715,8 +715,31 @@ Navbars
 
 .dropdown-menu {
   display: none;
+  text-align: left;
+  padding: 10px;
   list-style: none;
-  position: static;
+  position: absolute;
+  z-index: 3;
+  background-color: #fff;
+  border: 1px #aaaaaa solid;
+}
+.dropdown-menu li {
+  overflow: hidden;
+  width: 100%;
+  margin-left: -10px;
+  padding: 5px 5px 5px 15px;
+}
+.dropdown-menu li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.background-hover {
+  background-color: #d8d8d8;
 }
 
 .nav-item {
@@ -726,6 +749,10 @@ Navbars
   flex-grow: 1;
   width: 100%;
   margin: 0 10px;
+}
+
+#navbarDropdown {
+  display: flex;
 }
 
 .d-flex {
@@ -788,6 +815,10 @@ form input:focus {
   flex-wrap: inherit;
   align-items: center;
   justify-content: space-between;
+}
+
+.arrow {
+  margin: 1.5px 0 0 5px;
 }
 
 @media (min-width: 768px) {
