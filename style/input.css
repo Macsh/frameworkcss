@@ -775,6 +775,14 @@ Navbars
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 
+.nav-link:hover {
+  color: #000000;
+}
+
+.disabled:hover {
+  color: #696969;
+}
+
 .navbar-brand {
   margin-left: 1rem;
   font-size: 1.25rem;
@@ -955,6 +963,84 @@ form input:focus {
   .navbar-expand-xxl .nav-item {
     text-align: center;
   }
+}
+/******** 
+Popins
+********/
+.modal {
+  display: none;
+  position: absolute;
+  z-index: 5;
+  background-color: white;
+  border: 1px black solid;
+  padding: 20px;
+  width: 85%;
+  height: 85%;
+  top: 5%;
+}
+
+.title-modal {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  border-bottom: black 1px solid;
+  margin-bottom: 20px;
+}
+
+.popin-dismiss {
+  cursor: pointer;
+}
+
+/******** 
+Onglet
+********/
+.tab-content {
+  width: 80%;
+  margin: 20px;
+  border: black 1px solid;
+}
+.tab-content ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  border-bottom: black 1px solid;
+}
+.tab-content li {
+  list-style: none;
+  padding: 20px 40px;
+  cursor: pointer;
+}
+.tab-content li:hover {
+  background-color: #8686e2;
+  color: white;
+}
+.tab-content .tab-list .active {
+  background-color: #8686e2;
+  color: white;
+}
+.tab-content .tab-pane {
+  display: none;
+  margin: 20px;
+}
+.tab-content .active {
+  display: block;
+}
+
+/******** 
+Infobulles
+********/
+div.tooltip {
+  position: absolute;
+  width: 90px;
+  padding: 5px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+title {
+  display: none;
 }
 
 /*# sourceMappingURL=input.css.map */

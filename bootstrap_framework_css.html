@@ -48,43 +48,6 @@
     </div>
   </nav>
 
-  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-  </nav> -->
-
     <div class="container">
         <div class="row">
           <div class="col">
@@ -162,15 +125,45 @@
         </div>
 
           <button type="button" class="btn btn-primary">Primary</button>
-          <button type="button" class="btn btn-secondary">Secondary</button>
-          <button type="button" class="btn btn-success">Success</button>
-          <button type="button" class="btn btn-danger">Danger</button>
-          <button type="button" class="btn btn-warning">Warning</button>
+          <button type="button" class="btn btn-secondary tooltip"  title="ceci est un bouton secondaire" data-placement="right">Secondary</button>
+          <button type="button" class="btn btn-success tooltip" title="ceci est un bouton succès" data-placement="left">Success</button>
+          <button type="button" class="btn btn-danger tooltip" title="ceci est un bouton danger" data-placement="top">Danger</button>
+          <button type="button" data-target="warningmodal" class="btn btn-warning tooltip" title="ceci est un bouton warning" data-placement="bottom">Warning</button>
           <button type="button" class="btn btn-info">Info</button>
           <button type="button" class="btn btn-light">Light</button>
           <button type="button" class="btn btn-dark">Dark</button>
           <button type="button" class="btn">bouton</button>
           <button type="button" class="btn btn-link">Link</button>
+
+          <div id="warningmodal" class="modal">
+            <span class="title-modal">
+              <div></div>
+              <h2>Modal Title</h2>
+              <p class="popin-dismiss">❌</p>
+            </span>
+            Ceci est un test de modal pour essayer la modal parce que c'est une modal tu comprend l'intérêt d'une modal ou pas ? Parce qu'un modal peut être super utile en fait tu vois parce que c'est bien une modal pour cacher et montrer un element, 'fin tu vois quoi.
+          </div>
+
+          
+          <div class="tab-content">
+            <ul class="tab-list">
+              <li data-target="ong-1" class="active">Onglet 1</li>
+              <li data-target="ong-2">Onglet 2</li>
+              <li data-target="ong-3">Onglet 3</li>
+            </ul>
+  
+            <div class="tab-pane active" id="ong-1">
+              Ceci est l'onglet 1
+            </div>
+
+            <div class="tab-pane" id="ong-2">
+              Ceci est l'onglet 2
+            </div>
+
+            <div class="tab-pane" id="ong-3">
+              Ceci est l'onglet 3
+            </div>
+          </div>
 
 
           <button type="button" class="btn btn-primary disabled">Primary</button>
@@ -184,10 +177,10 @@
           <button type="button" class="btn disabled">bouton</button>
           <button type="button" class="btn btn-link disabled">Link</button>
 
-          <img style="width:30%;" class="img-rounded" src="../22050u000000iu86xA244_Z_1080_808_R5_D (2).jpg">
-          <img style="width:30%;" class="img-circle" src="../22050u000000iu86xA244_Z_1080_808_R5_D (2).jpg">
-          <img style="width:30%;" class="img-thumbnail" src="../22050u000000iu86xA244_Z_1080_808_R5_D (2).jpg">
-          <img style="width:30%;" class="img-blur" src="../22050u000000iu86xA244_Z_1080_808_R5_D (2).jpg">
+          <img style="width:30%;" class="img-rounded" src="22050u000000iu86xA244_Z_1080_808_R5_D (2).jpg">
+          <img style="width:30%;" class="img-circle" src="22050u000000iu86xA244_Z_1080_808_R5_D (2).jpg">
+          <img style="width:30%;" class="img-thumbnail" src="22050u000000iu86xA244_Z_1080_808_R5_D (2).jpg">
+          <img style="width:30%;" class="img-blur" src="22050u000000iu86xA244_Z_1080_808_R5_D (2).jpg">
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="script/script.js"></script>

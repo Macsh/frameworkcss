@@ -692,13 +692,6 @@ Visibility
 Navbars
 ********/
 
-// .nav {
-//     display:flex;
-//     flex-wrap:wrap;
-//     margin-bottom:0;
-//     list-style:none;
-// }
-
 .navbar {
     position:relative;
     display:flex;
@@ -754,10 +747,6 @@ Navbars
     background-color: #d8d8d8;
 }
 
-// .dropdown-divider:hover {
-//     background-color: #ffffff;
-// }
-
 .nav-item {
     flex:1 1 auto;
     text-align:left;
@@ -778,6 +767,14 @@ Navbars
     font-weight: 500;
     text-decoration:none;
     transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out
+}
+
+.nav-link:hover {
+    color:#000000;
+}
+
+.disabled:hover {
+    color:#696969;
 }
 
 .navbar-brand {
@@ -999,4 +996,92 @@ form input:focus{
             text-align:center;
         }
     }
+}
+
+/******** 
+Popins
+********/
+
+.modal {
+    display: none;
+    position:absolute;
+    z-index: 5;
+    background-color: white;
+    border: 1px black solid;
+    padding: 20px;
+    width: 85%;
+    height: 85%;
+    top: 5%;
+}
+
+.title-modal {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-bottom: black 1px solid;
+    margin-bottom: 20px;
+}
+
+.popin-dismiss {
+    cursor: pointer;
+}
+
+/******** 
+Onglet
+********/
+
+.tab-content {
+    width: 80%;
+    margin: 20px;
+    border: black 1px solid;
+
+    & ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        justify-content: space-between;
+        border-bottom: black 1px solid;
+    }
+
+    & li {
+        list-style: none;
+        padding: 20px 40px;
+        cursor: pointer;
+    }
+
+    & li:hover {
+        background-color: rgb(134, 134, 226);
+        color: white;
+    }
+    
+    & .tab-list .active {
+        background-color: rgb(134, 134, 226);
+        color: white;
+    }
+
+    & .tab-pane {
+        display: none;
+        margin: 20px;
+    }
+
+    & .active {
+        display: block;
+    }
+}
+
+/******** 
+Infobulles
+********/
+
+div.tooltip {
+    position: absolute;
+    width: 90px;
+    padding: 5px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+title {
+    display: none;
 }
